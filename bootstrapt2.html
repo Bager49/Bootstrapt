@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrapt2</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="stil.css">
+</head>
+<body>
+    <div class="container menu">
+        <div class="row">
+            <div class="col-md-6 bg-light">
+                <nav class="nav justify-content-between nav-tabs nav-justified"><!---navigasyonu ortalamak icin justify-content-center yada felxboxin her özelligini kullaniriz, nav-pill nav-tabs, nav-fill pill ile kullanilabilir-->
+                <a class="nav-link active" aria-current="page" href="#">Anasayfa</a>
+                <a class="nav-link" href="#">Hakkimizda</a>
+                <a class="nav-link" href="#">Iletsisim</a>
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">mentorler</a>
+             </nav>
+            </div>
+
+            <div class="col-md-6">
+                <nav class="nav flex-column nav-pills nav-fill"><!---normalde flex row dur ama flex column yapilarak dikey yapilir-->
+                <a class="nav-link" aria-current="page" href="#">Anasayfa</a>
+                <a class="nav-link active" href="#">Hakkimizda</a>
+                <a class="nav-link" href="#">Iletsisim</a>
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">mentorler</a>
+             </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex align-items-center">
+                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                      <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
+                      <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
+                      <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</button>
+                      <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
+                      <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-deneme" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
+                    </div>
+                    <div class="tab-content" id="v-pills-tabContent">
+                      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ducimus est incidunt maiores pariatur! Laudantium, sit. Harum quas, non, quae commodi temporibus nam aut assumenda provident ex, dolores vel! Doloremque, nesciunt magni veniam sit pariatur non ex asperiores doloribus earum est quos quas incidunt dolores fuga aliquam perspiciatis vitae. Accusamus!</div>
+                      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate aperiam distinctio odit ducimus nisi quo natus explicabo, iste facilis eveniet laboriosam libero, iusto voluptatem voluptates aspernatur eaque a, itaque modi.</div>
+                      <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, veritatis ad? Similique praesentium perferendis fugiat, delectus distinctio quasi tenetur veritatis ea aspernatur cum illo dolore blanditiis vitae officia consequuntur nisi repudiandae nam itaque error!</div>
+                      <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit doloremque atque beatae harum totam facere cupiditate explicabo nam tempora iusto?</div>
+                      <div class="tab-pane fade" id="v-pills-deneme" role="tabpanel" aria-labelledby="v-pills-settings-tab">bu  bir sonradan eklemedir</div><!-----id="v-pills-deneme" ile data-bs-target="#v-pills-deneme" ayni olmali-->
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+
+
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"><!--navbar-dark yazi rengi iel alakali, hamburger menuyu kapatmak icin navbar-expand-lg, fixed-top ile menuyu sabitleriz asagi yukari gittigimizde oynamaz-->
+                    <div class="container-fluid">
+                        <a class="navbar-brand text-danger" href="#">
+                        <img src="logo.png" class="img-fluid me-3 " alt="">
+                        BASTAS
+                        </a>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+
+                          <div class="collapse navbar-collapse text-white" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                  <a class="nav-link active" aria-current="page" href="#">Anasyfa</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Hakkimizda</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Hizmetler
+                                  </a>
+                                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">TAsima</a></li>
+                                    <li><a class="dropdown-item" href="#">deneme</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                  </ul>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Suan burdasiniz</a>
+                                </li>
+                              </ul>
+
+                              <form class="d-flex me-auto"><!--ms saga dayali me-auto sola hizali-->
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-light" type="submit">Search</button>
+                              </form>
+                          </div>
+                    </div>
+          </nav>
+
+
+
+
+
+
+
+
+    <script src="dropdown.js"></script><!-- bu her zaman js.scriptden once gelmeli-->
+    <script src="bootstrap.js"></script>
+</body>
+</html>

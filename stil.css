@@ -4,13 +4,56 @@
 .sutun_yuk {
   height: 100px;
 }
-.kutu{
-    height: 300px;
-    width: 300px;
+.kutu {
+  height: 300px;
+  width: 300px;
 }
-.yukseklik{
+.yukseklik {
   height: 500px;
-  
+}
+.menu {
+  margin-top: 80px;
+}
+
+/* menu deneme*/
+.logo {
+  height: 40px;
+  width: 70px;
+}
+.kapsayici {
+  background-color: #fff7ae;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.nav-link{
+  color: #DF2E2E !important;
+  font-weight: bold;
 }
 
 
+@media (max-width: 768px) { 
+    .kapsayici{
+      border-bottom-left-radius: 0%;
+      border-bottom-right-radius: 0%;
+}
+    .nav-item{
+      margin-top: 20px;
+      transition: 0.5 all ease !important;
+      -webkit-transition: 0.5 all ease !important;
+      -moz-transition: 0.5 all ease !important;
+      -ms-transition: 0.5 all ease !important;
+      -o-transition: 0.5 all ease !important;
+    }
+    .nav-item:hover:not(.sirket){/*logoya hover vermemek icin*/
+      background-color: darkcyan;
+      padding-left: 30px;
+    }
+    .nav-link:hover{
+      color:white !important ;
+    }
+    .logo-border{/*simgeye renk ve stil vermek icin ekstra class tanimlanip yapildi*/
+      color: #DF2E2E;
+      margin-right: -5px;
+    }
+
+ }
