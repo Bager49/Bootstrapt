@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="stil.css">
 </head>
 <body>
+    <!-------------------------------Satir sütun genel Yapisi--------------------------------->
     <div class="container mt-3">
         <div class="row yuk" >
             <div class="bg-warning col-xxl-3 col-xl-8  col-lg-7  col-md-4  col-sm-9">bootsrapt</div>
@@ -23,7 +24,8 @@
             <div class="col-lg-3 col-md-4 col-sm-12 bg-warning ">Sütun2</div>
         </div>
     </div>
-    <div class="container">
+
+    <div class="container mt-1">
         <div class="row gx-1 gy-4">
             <div class="col-md-4 bg-warning">
                 <p class="bg-success">Sutun 1</p>
@@ -40,6 +42,7 @@
 
         </div>
     </div>
+
     <div class="container bg-success" >
         <div class="row bg-warning satir-yuk align-items-center">
             <div class="col-md-4 bg-danger sutun_yuk align-self-end">Suttun 1</div>
@@ -47,11 +50,11 @@
             <div class="col-md-4 bg-primary sutun_yuk align-self-baseline">sutun 3</div>
         </div>
     </div>
+
     <div class="container">
         <div class="row">
             <div class="col-3 display-1"><h1><abbr title="Display-1">Baslik</abbr></h1></div>
             <div class="col-3 display-3">
-                
                <h2>BAslik-2</h2>
             </div>
             <div class="col-3 display-4"><h3>
@@ -70,10 +73,12 @@
                     Guzel gören güzel düsünür..
                 </blockquote>
                 <blockquote class="blockquote-footer">BDZ</blockquote>
-                </div>
             </figure>
+            </div>
         </div>
     </div>
+
+    <!-----------------------------Table------------------------------------------------------->
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -112,14 +117,16 @@
         </div>
     </div>
 
+    <!---------------------------------Div oratalama--------------------->
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="text-center">
-                    <figure class="figure">
-                        <img src="user-1.png" class="rounded-1  img-fluid" alt="">                   
-                        <figcaption class="figure-caption text-end">Yazar Lısa bella</figcaption>
-                     </figure> </div>
+                      <figure class="figure">
+                          <img src="user-1.png" class="rounded-1  img-fluid" alt="">                   
+                          <figcaption class="figure-caption text-end">Yazar Lısa bella</figcaption>
+                      </figure> 
+                    </div>
             </div>
         </div>
     </div>
@@ -128,13 +135,15 @@
     <div class="kutu bg-secondary d-inline-block mx-2 my-2 pe-4 pb-3">icerik1</div><!--mx ve my kutularin y ve x eksenine gore uzaklik verir-->
 </div>
 
+
+<!--------------------------------------Form elemanlari---------------------------------------------------->
 <div class="container">
     <div class="row">
         <div class="col-md-6">
             <form action="">
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@gmail.com">
                     <label for="exampleFormControlInput1" class="form-label">Email address2</label>
                     <input type="email" class="form-control" id="exampleFormControlInput1" disabled placeholder="name@example.com">
                     <label for="exampleFormControlInput1" class="form-label">Email address3</label>
@@ -170,12 +179,12 @@
 
                   <!--RaNGE-->
                    <label for="customRange3" class="form-label">Example range</label>
-                    <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+                    <input type="range" class="form-range" min="0" max="8" step="0.5" id="customRange3">
                   
                   <!--form Floating guzel bir efektmis-->
                     <div class="form-floating mb-3">
                         <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">Email address</label>
+                        <label for="floatingInput">Email addresse</label>
                       </div>
                       <div class="form-floating">
                         <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
@@ -184,7 +193,6 @@
             
                       <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com" value="test@example.com">
                       <label for="floatingInputInvalid">Invalid input</label>
-
                 </form>
         </div>
 
@@ -206,11 +214,11 @@
                     <input class="form-control" type="file" id="formFile" multiple>
                   </div>
                   <label for="exampleColorInput" class="form-label">Renk Sec</label>
-                <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+                <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d8c" title="Choose your color">
               
                 <!------ARama menusu gibi bisey-->
                 <label for="exampleDataList" class="form-label">Arama yap..</label>
-                 <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+                 <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Ara...">
                 <datalist id="datalistOptions">
                 <option value="Augsburg">
                 <option value="Regensburg">
@@ -223,13 +231,13 @@
                 <div class="form-check">
                     <input class="form-check-input"  type="checkbox" value="" id="flexCheckDefault">
                     <label class="form-check-label" for="flexCheckDefault">
-                      Default checkbox
+                      Varsayilan checkbox
                     </label>
                   </div>
                   <div class="form-check form-switch"><!--form-switch yazarsak goruntusu degisir-->
                     <input class="form-check-input"  type="checkbox" value="" id="flexCheckChecked" checked>
                     <label class="form-check-label" for="flexCheckChecked">
-                      Checked checkbox
+                       otomatik secili checkbox form switch uygulandi ;)
                     </label>
                   </div>
 
@@ -250,42 +258,45 @@
     </div>
 </div>
 
-<!--accordion Menu-->
-<div class="container bg-success mb-3">
-    <div class="row bg-primary">
-        <div class="col bg-secondary">
-            <div class="accordion" id="accordionExample">
+<!---------------------------Accordion Menu------------------------------------------------------>
+<div class="container bg-primary mb-3 pt-1 pb-1">
+    <div class="row bg-secondary ps-1 pb-1 pe-1 pt-1">
+        <div class="col bg-warning">
+
+            <div class="accordion mt-1 mb-1" id="accordionExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                       Javascript Dersleri
                     </button>
                   </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample"><!-- class daki show u kaldirirsan kapali gelir-->
+                  <div id="collapseOne" class="accordion-collapse collapse show " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                     </div>
                   </div>
                 </div>
+
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                       Bootstrapt Dersleri
                     </button>
                   </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample"><!-- class daki show u kaldirirsan kapali gelir-->
                     <div class="accordion-body">
                       <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                     </div>
                   </div>
                 </div>
+
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                       Css Dersleri
                     </button>
                   </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                     </div>
@@ -293,28 +304,45 @@
                 </div>
 
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
+                    <h2 class="accordion-header" id="headingThree1">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseYeni" aria-expanded="false" aria-controls="collapseThree">
-                        Css Dersleri
+                        Python Dersleri
                       </button>
                     </h2>
-                    <div id="collapseYeni" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div id="collapseYeni" class="accordion-collapse collapse" aria-labelledby="headingThree1" data-bs-parent="#accordionExample"><!---id="collapseYeni" ve  data-bs-target="#collapseYeni" ayni olmali yeni bisey eklersek bunlar degisir gerisi ayni kalabilir---->
+                      <div class="accordion-body">
+                        <strong>Bu Makale Python hakkiindadir.</strong>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi animi doloremque odit velit dolore beatae ipsa ipsum pariatur, iusto incidunt hic explicabo ea, aperiam excepturi magni labore soluta. Voluptas eos quam sapiente repudiandae ut mollitia numquam eveniet cumque est tempore quaerat aspernatur id suscipit harum quisquam provident beatae adipisci, fugiat alias enim! Tempora ullam deserunt at consectetur eum odio sit reprehenderit consequuntur eaque nesciunt necessitatibus cumque voluptate, obcaecati dicta blanditiis nemo nobis culpa quis. Veritatis, laudantium quibusdam. Totam similique obcaecati consequatur architecto! Deserunt, nesciunt sint beatae excepturi deleniti corrupti, maxime odit cupiditate ullam quaerat, consectetur tempore qui amet fuga ipsa!
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-------- id="collapseBes" ve data-bs-target="#collapseBes" leri ayni verirse diger ogelerede yani accordion menulerded o zaman hepsini es zamanli acik tuatbiliriz----->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBes" aria-expanded="false" aria-controls="collapseThree">
+                        C# Derlseri
+                      </button>
+                    </h2>
+                    <div id="collapseBes" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                       <div class="accordion-body">
                         <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                       </div>
                     </div>
                   </div>
               </div>
+
         </div>
     </div>
 </div>
+<!---------------------------Accordion Menu Son------------------------------------------------------>
 
+<!---------------------------------BreadCrumps &&  Alert metni && Butonlar && RAdio Button && Group Button----------------------------------->
 <div class="container">
     <div class="row">
         <div class="col">
           <h3>BreadCrumps</h3>
             <div class="alert alert-primary alert-dismissible fade show" role="alert">
-                A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+               Basit bir Alert <a href="#" class="alert-link">ornegi a linki ile</a>. Eger istersen bir tikla.
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
         </div>
@@ -335,25 +363,25 @@
       <h3>Buttonlar</h3>
      <p>
        <button class="btn btn-primary">Gönder</button>
-       <button class="btn btn-primary btn-sm">Small</button>
-       <button class="btn btn-primary btn-lg">Large</button>
+       <button class="btn btn-secondary btn-sm">Small</button>
+       <button class="btn btn-warning btn-lg">Large</button>
        <a href="" class="btn btn-success mt-2">LinkButton</a>
        <button class="btn btn-outline-danger mt-2">OutlineBtn</button>
      </p>
      <div class="d-grid gap-2"><!--kalip boyut gap-2 butonlarin arsini acmak icin-->
-      <button class="btn btn-primary" type="button">Button</button>
+      <button class="btn btn-primary" type="button">Dügme</button>
       <button class="btn btn-primary" type="button">Button</button>
     </div>
 
     <div class="d-grid gap-2 d-md-block mt-2"><!--yanyana almak icin d-md-block-->
-      <button class="btn btn-primary" type="button">Button</button>
-      <button class="btn btn-primary" type="button">Button</button>
+      <button class="btn btn-primary" type="button">Yan</button>
+      <button class="btn btn-primary" type="button">Yana</button>
     </div>
     </div>
     <div class="col">
       <h4>Grup Button</h4>
       <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-primary">Left</button><!--active klasi verdiginde aktifmis gibi gozukur-->
+        <button type="button" class="btn btn-primary active">Left</button><!--active klasi verdiginde aktifmis gibi gozukur-->
         <button type="button" class="btn btn-outline-info">Middle</button>
         <button type="button" class="btn btn-primary">Right</button>
       </div>
@@ -373,21 +401,23 @@
     </div>  
   </div>
 </div>
+
+<!-------------------------------------Card lar------------------------------------------->
 <div class="container">
   <div class="row"> 
-    <div class="col-auto text-center"><h2 class="text-center">Cards</h2></div>
+    <div class="row justify-content-center align-items-center"><h2 class="text-center">Cards</h2></div>
     <div class="col mt-5">
-      <div class="card border-danger" style="width: 18rem;">
+      <div class="card border-dark" style="width: 20rem;">
         <img src="user-2.png" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Web Developer</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="www.google.com" class="btn btn-primary">Go Google</a>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
+          <li class="list-group-item">Ehergezig</li>
+          <li class="list-group-item">Teamfähig</li>
+          <li class="list-group-item">Anaysiert Denkeer</li>
         </ul>
       </div>
     </div>
@@ -402,14 +432,14 @@
         <ul class="list-group list-group-flush">
           <li class="list-group-item">An item</li>
           <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
+          <li class="list-group-item">A  item</li>
         </ul>
       </div>
     </div>
 
     <div class="col">
       <div class="row">
-        <div class="card border-primary text-warning text-center mt-5" style="width: 18rem;">
+        <div class="card border-primary text-warning text-center mt-5" style="width: 18rem;"><!--farkli bir kart taaarimi istenirse boyle de yapilir-->
           <img src="user-1.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
@@ -430,7 +460,7 @@
 
     <div class="col">
       <div class="row">
-        <div class="card bg-dark text-white mt-5">
+        <div class="card bg-dark text-dark mt-5">
           <img src="category-3.jpg" class="card-img" alt="...">
           <div class="card-img-overlay"><!--yukardakinen farkli olarak yasziyi fotonun sutune yazar-->
             <h5 class="card-title">Card title</h5>
@@ -443,10 +473,11 @@
   </div>
 </div>
 
+<!------------------------------Carousel Slide lar----------------------------------------------------------->
 <div class="container">
   <div class="row">
     <div class="col-6">
-      <div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel"><!--carosel-dark ile ok tuslarini vs siyah yapabiliriz-->
+      <div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel"><!--carosel-dark ile ok yani yön tuslarini vs siyah yapabiliriz-->
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="user-1.png" class="d-block w-100" alt="...">
@@ -458,7 +489,7 @@
             <img src="user-3.png" class="d-block w-100" alt="...">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"><!---yukardaki id ile data-bs-target ayni olmali-->
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
@@ -477,17 +508,17 @@
             <button type="button" data-bs-target="#carouselExampleIndicators-2" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
           <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="3000"><!--sureyi burdan ayarlayabiliriz-->
+            <div class="carousel-item active" data-bs-interval="2000"><!--sureyi burdan ayarlayabiliriz-->
               <img src="user-3.png" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <h5>First slide label</h5>
                 <p>Some representative placeholder content for the first slide.</p>
               </div>
             </div>
-            <div class="carousel-item" data-bs-interval="3000">
+            <div class="carousel-item" data-bs-interval="1000">
               <img src="user-2.png" class="d-block w-100" alt="...">
             </div>
-            <div class="carousel-item" data-bs-interval="3000">
+            <div class="carousel-item" data-bs-interval="2000">
               <img src="user-1.png" class="d-block w-100" alt="...">
             </div>
           </div>
@@ -506,13 +537,10 @@
 
 <!---------hizalama dikeyde-------------------------->
 
-<div class="container">
+<div class="container bg-info">
   <div class="row yukseklik" >
     <div class="col-md-6 my-auto">
-      <div class="kutu bg-warning mx-auto" >
-        <button type="button" class="btn-close" aria-label="Close"></button>
-      </div>
-      
+      <div class="kutu bg-warning mx-auto" > <button type="button" class="btn-close" aria-label="Close"></button> </div>
     </div>
     <div class="col-md-6 my-auto text-center">
       <div class="kutu bg-secondary d-inline-block" ></div>
@@ -530,7 +558,7 @@
   </div>
 </div>
 
-
+<!---------------------------Dropdown Menu'ler-------------------------------->
 <div class="container">
   <div class="row">
     <h2>Dropdown Menu ve List-Group</h2>
@@ -550,8 +578,8 @@
     </div>
 
     <div class="col-3">
-      <div class="btn-group dropup">
-        <button type="button" class="btn btn-danger btn-lg">Anasayfa</button>
+      <div class="btn-group dropup"><!------droupup ok yukari bakar butonun yanindaki-------->
+        <button type="button" class="btn btn-danger btn-lg">Menu</button>
         <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
           <span class="visually-hidden">Toggle Dropdown</span>
         </button>
@@ -566,7 +594,7 @@
       </div>
 
     <div class="col-3">
-      <div class="btn-group dropend">
+      <div class="btn-group dropend"><!-----saga bakar dropstart olursa sola bakar--------->
         <button type="button" class="btn btn-secondary btn-lg">Anasayfa</button>
         <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
           <span class="visually-hidden">Toggle Dropdown</span>
@@ -575,7 +603,7 @@
           <li><a class="dropdown-item active" href="#">Anasyfa</a></li>
           <li><a class="dropdown-item" href="#">Ilkelerimiz</a></li>
           <li><a class="dropdown-item" href="#">Calismalirimiz</a></li>
-          <li><hr class="dropdown-divider"></li><!---linkleri ayrimak icin -->
+          <li><hr class="dropdown-divider"></li><!------ linkleri ayrimak icin ------->
           <li><a class="dropdown-item" href="#">Yeni eklendi</a></li>
         </ul>
       </div>
@@ -583,7 +611,7 @@
       <ol class="list-group list-group-numbered mt-5">
         <li class="list-group-item d-flex justify-content-between align-items-start">
           <div class="ms-2 me-auto">
-            <div class="fw-bold">Subheading</div>
+            <div class="fw-bold">Farkli bir liste</div>
             Cras justo odio
           </div>
           <span class="badge bg-primary rounded-pill">10</span>
@@ -606,9 +634,8 @@
     </div>
 
     <div class="col-3">
-
           <ul class="list-group">
-            <li class="list-group-item active">An item</li>
+            <li class="list-group-item active">Guzel bir Liste</li>
             <li class="list-group-item list-group-item-primary">A second item</li>
             <a href="#" class="list-group-item list-group-item-action">A third item</a>
             <li class="list-group-item list-group-item-success">A fourth item</li>
@@ -619,10 +646,12 @@
 </div>
 </div>
 
-
+<!---------------------------------Liste ler bir kismi hemen yukarda-->
 <div class="container">
   <div class="row">
     <div class="col-2">
+
+      <!------------------bilgi icerikli Liste-------------->
       <div class="list-group" id="list-tab" role="tablist">
         <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Home</a>
         <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Profile</a>
@@ -688,13 +717,13 @@
         class="btn btn-primary"
         data-bs-toggle="modal" 
         data-bs-target="#exampleModal">
-        Launch demo modal
+        Siradan bir Modal
 </button>
 <button type="button" 
         class="btn btn-primary"
         data-bs-toggle="modal" 
         data-bs-target="#exampleModal-2">
-        Launch demo modal
+        Gelismis versiyon
 </button>
 <button type="button" 
         class="btn btn-primary"
@@ -726,10 +755,10 @@
 data-bs-backdrop="static" 
 id="exampleModal-2" tabindex="-1"
  aria-labelledby="exampleModalLabel" aria-hidden="true"><!--data-bs-backdrop="static" sadece kapat tuslari ile kapnir sitede herhangi bir yere tiklandiginda kapanmaz tek afrk bu-->
-  <div class="modal-dialog modal-dialog-centered modal-lg"><!---oratalamak gelen text modal dialog u-->
+  <div class="modal-dialog modal-dialog-centered modal-lg"><!---oratalamak icin  Modal dialog u-->
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Large Modal ve Ortali</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -749,7 +778,7 @@ id="exampleModal-2" tabindex="-1"
   <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl"><!--scroll ozelligi acik ortali ve xl bir modal-dialog-->
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Lorem Ipsum nedir? scroll ozelligi acik ortali ve xl bir modal-dialog</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
