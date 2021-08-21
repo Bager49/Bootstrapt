@@ -30,6 +30,11 @@
   font-weight: bold;
 }
 
+.yukseklik2{
+    height: 300px;
+    overflow-y: scroll;
+}
+
 
 @media (max-width: 768px) { 
     .kapsayici{
@@ -49,7 +54,7 @@
       padding-left: 30px;
     }
     .nav-link:hover{
-      color:white !important ;
+      color:rgb(96, 236, 61) !important ;
     }
     .logo-border{/*simgeye renk ve stil vermek icin ekstra class tanimlanip yapildi*/
       color: #DF2E2E;

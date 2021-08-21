@@ -7,6 +7,7 @@
     <title>Bootstrapt2</title>
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="stil.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </head>
 <body>
     <div class="container menu">
@@ -102,12 +103,216 @@
 
 
 
+           <!-------------------Poppover---------------------------->
+   <div class="container">
+      <div class="row">
+         <div class="col">
+                    
+                 <button type="button" class="btn btn-lg btn-info"
+                 data-bs-toggle="popover" title="Bu bir bilgilendrime Yazisidir" 
+                data-bs-content="Eleman secerken dikkat edilmesi gereken seyler.."
+                data-bs-trigger="focus"
+                data-bs-placement="bottom"><!------nerde cikacak kutucuk yerini belirler,   data-bs-trigger="focus" herhangi bir yere tiklandiginda kaybomasi icin-->
+                Popovers</button>
+
+                <!-------Toolstips, istedigimiz elemana Tooltips ekleyebiliriz------------>
+                <button type="button" class="btn btn-success" 
+                data-bs-toggle="tooltip" data-bs-placement="top"
+                data-bs-placement="right"
+                 title="Tooltip ile Popovers arasindaki farka dikkat">
+                  Tooltip 
+                </button>
+
+                <!-------------spinnerlar----------->
+                <div class="spinner-border text-primary" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+
+              
+              <div class="spinner-grow text-success" role="status">
+                <span class="visually-hidden">Loading...</span>
+             </div>  
+             
+             <button class="btn btn-primary" type="button" disabled>
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              Loading...
+            </button>
+         </div>
+         <div class="col">
+          <div class="progress">
+            <div class="progress-bar" 
+            role="progressbar" style="width: 80%"
+             aria-valuenow="80" aria-valuemin="0" 
+             aria-valuemax="100">
+            75%
+            </div>
+          </div>
+
+          <div class="progress mt-2" style="height: 1px;">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <div class="progress mt-2" style="height: 20px;"><!---progressbarin boyutunu burdan ayarlariz-->
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar bg-warning progress-bar-striped  progress-bar-animated" role="progressbar" style="width: 40%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+         </div>
+     </div>
+  </div>
+
+  <div class="container">
+    <div class="row mt-2">
+      <div class="col" tabindex="0" >
+        <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" href="#scrollspyHeading1">First</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#scrollspyHeading2">Second</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+                <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div  data-bs-spy="scroll" 
+        data-bs-target="#navbar-example2" data-bs-offset="0" 
+        class="scrollspy-example yukseklik2" tabindex="0"><!---buraya still dosaysindan bir class tanimylayip yukseklik ve overflow degeri vermek gerekir-->
+          <h4 id="scrollspyHeading1">First heading</h4><!---id ile yukardaki href in icindeki ayni olmali-->
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint soluta quas eius asperiores quod mollitia maxime expedita officia ad voluptatem veritatis assumenda adipisci distinctio, consequuntur, perspiciatis magnam eum molestiae rerum sequi. Autem eaque architecto soluta quam, alias consequatur nesciunt sequi?</p>
+          <h4 id="scrollspyHeading2">Second heading</h4>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt exercitationem quisquam veniam quas iste unde ea dolor nobis, illo nam hic reprehenderit quo aut perferendis, velit ut dolorum eius. Velit?</p>
+          <h4 id="scrollspyHeading3">Third heading</h4>
+          <p>Essen und Trinken sind ein wichtiger kultureller Bestandteil unseres Lebens und tragen wesentlich zu unserem Wohlbefinden bei. Wenn die Ernährung noch dazu ausgewogen ist, kann sie mit dafür sorgen, dass wir leistungsfähiger sind, seltener krank werden und ein zufriedeneres Leben führen.</p>
+          <h4 id="scrollspyHeading4">Fourth heading</h4>
+          <p>Die Grundlage dafür ist eine sinnvolle und vor allem abwechslungsreiche Auswahl der Lebensmittel, die wir täglich zu uns nehmen. Darüber hinaus sollten wir die Lebensmittel schonend und fettarm zubereiten und Mahlzeiten bewusst genießen – befreit von der Hektik des Alltags. Denn achtsames, genussvolles Essen ist gesundes Essen: Es sorgt für eine bessere Verdauung und Aufnahme der Vitamine und Mineralstoffe, die der Körper für ein funktionierendes Immunsystem und einen gesunden Stoffwechsel braucht.</p>
+          <h4 id="scrollspyHeading5">Fifth heading</h4>
+          <p>Es ist nicht immer ganz leicht, sich ausgewogen zu ernähren, denn die Auswahl an schnell verfügbaren Snacks, Fertiggerichten, Fast Food und Essen zum Mitnehmen ist riesig. Oft greifen wir auf solche Angebote zurück und vergessen, dass ein frisches, gesundes Essen gar nicht so viel Arbeit macht. Ein leichter Salat oder ein Nudelgericht mit Gemüse beispielsweise sind innerhalb kurzer Zeit zubereitet. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <img src="instagram.svg" height="120px" width="120px" alt="">
+    </div>
+    <div class="col">
+      <i class="bi bi-x-diamond-fill" style="font-size: 100px;"></i>
+    </div>
+    <div class="col">
+      <i class="bi bi-facebook" style="font-size: 100px; color: tomato;"></i>
+    </div>
+    <div class="col">
+      <svg xmlns="http://www.w3.org/2000/svg"
+       width="120" height="120" 
+       fill="darkred"
+        class="bi bi-github" viewBox="0 0 16 16">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <a class="btn btn-primary" data-bs-toggle="offcanvas"
+       href="#offcanvasExample" 
+       role="button" aria-controls="offcanvasExample">
+       A elementi ile Offcanvas
+      </a><!---------- href="#offcanvasExample"----------------------->
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" 
+      data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        Button  ile Offcanvas
+      </button><!------------data-bs-target="#offcanvasExample"--------->
+      
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" 
+      data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Enable body scrolling</button><!--arka plani ve scroll u serbest birakma offcanvas acilirken-->
+
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" 
+      data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Enable both scrolling & backdrop</button><!--arka plani serbest karatma ama scroll yapmayi serbest birakma offcanvas acilirken-->
+
+      <!----offcanvas-start, end, top, bottom ile offcanvasin nereden cikacagini belirleriz-->
+      <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header"><!--cikan offcanvasisin baslik yani header kismi-->
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Ilk gizli kaydirma cubugu</h5>
+          <button type="button" class="btn-close text-reset"  data-bs-dismiss="offcanvas"  aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body"><!---offcanvasin icerik yani body kismi, bu body nin icine her istedimizi yapabiliriz-->
+          <div>
+              burayi istedigin sekilde ekelem degistirme yapabilirsin
+              <a href="#">Anasayfa</a>
+              <a href="#">Ilkelerimiz</a>
+              <a href="#">Misyonumuz</a>
+          </div>
+        <!----
+        <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        -->  
+        </div>
+      </div>
+
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Colored with scrolling</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <p>Try scrolling the rest of the page to see this option in action.</p>
+        </div>
+      </div>
+
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdroped with scrolling</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <p>Try scrolling the rest of the page to see this option in action.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 
 
-
-
+        <script src="popper.js"></script>
     <script src="dropdown.js"></script><!-- bu her zaman js.scriptden once gelmeli-->
     <script src="bootstrap.js"></script>
+    <script>
+    //Popever icin gerekli
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+  	  var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+     return new bootstrap.Popover(popoverTriggerEl)
+      })
+    
+    </script>
+    <script>//tooltipin yerini degismek icin bu kod olamali
+           var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
 </body>
 </html>

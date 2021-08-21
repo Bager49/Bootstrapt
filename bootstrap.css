@@ -6146,8 +6146,8 @@ textarea.form-control-lg {
   border: 0.25em solid currentColor;
   border-right-color: transparent;
   border-radius: 50%;
-  -webkit-animation: 0.75s linear infinite spinner-border;
-  animation: 0.75s linear infinite spinner-border;
+  animation: 1s linear infinite spinner-border;
+  -webkit-animation: 1s linear infinite spinner-border;
 }
 
 .spinner-border-sm {
